@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+        <a href="index.html">Accueil</a>
+        <a href="exercices.html">Exercices</a>
+        <a href="figures.html">Figures</a>
+		<a href="avantages&inconvenients.html">Avantages & Inconvénients</a>
+    </nav>
+</header>
+
+<div>
+<table width=900 align=center>
+	<tr>
+		<td>
+			<main>
+			<h1><u>Calisthenics</u></h1>
+			</main>
+			
+			<!-- Présentation -->
+			  <h2>Présentation</h2>
+				 <div><p> La calisthenics (ou street workout) est une méthode d’entraînement au poids du corps.
+				Elle consiste à utiliser son propre corps comme résistance.
+				Le mot vient du grec kallos (beauté) et sthenos (force) donc la force harmonieuse.
+				</p></div>
+			
+			<!-- developpement sur le corps -->
+				<h3>Elle développe :</h3>
+					<ul>
+						<li>La force</li>
+						<li>L’endurance</li>
+						<li>La mobilité</li>
+						<li>L’équilibre</li>
+						<li>Le contrôle corporel</li>
+						<li>La coordination</li>
+					</ul>
+			<!-- différents styles -->
+				<h2>Les différents styles</h2>
+					<div><p>
+						1.	Street Workout freestyle → figures dynamiques et enchaînements<br>
+						2.	Calisthenics statique → maintien de positions (planche, lever)<br>
+						3.	Calisthenics dynamique → mouvements explosifs<br>
+						4.	Endurance / sets & reps → répétitions classiques (pompes, tractions)<br>
+					</div></p>
+			<!-- Alimentation -->
+				<h2>Alimentation</h2>
+					<div>
+					L’alimentation en calisthenics dépend surtout de ton objectif : prendre du muscle, gagner en force, ou rester sec (perdre du gras).<br>
+						<ul>
+							<li>💪 Prise de muscle :</li>
+								-Léger surplus calorique (+200 à +400 kcal)<br>
+								-Beaucoup de protéines<br>
+								-Glucides suffisants pour performer<br>
+							<li>🔥 Sèche / perte de gras :</li>
+								-Léger déficit calorique (-300 à -500 kcal)<br>
+								-Protéines élevées pour garder le muscle<br>
+								-Garder la force à l’entraînement<br>
+							<li>⚡ Force pure / figures :</li>
+								-Poids corporel stable<br>
+								-Priorité à la récupération<br>
+								-Apport glucidique adapté aux séances intenses<br>
+						</ul>
+					</div>
+			<!-- Musique de fond -->
+				<h2>Musique de fond</h2>
+				
+			 <audio  id="zic" src="musique.mp3"></audio>
+			<!--on nomme les boutons -->
+			<div>
+			<button onclick="changeState(0)" >PLAY</button>
+			<button onclick="changeState(1)" class="bouton">PAUSE</button>
+			<button onclick="changeState(2)" class="bouton active">STOP</button>
+			</div>
+		</td>
+	</tr>
+</table>
+	<!--on écrit les variable du script -->
+	<script>
+		<!--on attribue valeur et fonction de chaque bouton -->
+		function changeState(x){
+		let boutons = document.querySelectorAll(".bouton");
+		let audio = document.querySelector("#zic");
+		for(let i =0; i<boutons.length; i++){
+		boutons[i].classList.remove("active");
+		}
+		boutons[x].classList.add("active");
+		if(x == 0){
+		audio.play();
+		}
+		if(x == 1){
+		audio.pause();
+		}
+		if(x == 2){
+		audio.pause();
+		audio.currentTime = 0;
+		}
+		}
+	</script>
+</div>   
+
+</body>
+</html>
+

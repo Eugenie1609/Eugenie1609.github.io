@@ -1,0 +1,46 @@
+/*donne la taille d'une iframe*/
+iframe {
+margin: 15px;	
+height:100vh;
+width:100%;
+}
+/*modifie la couleur de fond d une page la marge et la police*/
+body {
+    background-color: #C3C3DB;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #9F9FBF;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6D6DC7;
+}
+/*change la couleur d'un lien visité*/
+nav a:visited {
+    color: #43438A;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+table {
+	background-color : white;
+	padding:15px
+	}

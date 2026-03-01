@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les avantages & inconvénients</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="exercices.html">Exercices</a>
+        <a href="figures.html">Figures</a>
+		<a href="avantages&inconvenients.html">Avantages & Inconvénients</a>
+    </nav>
+</header>
+
+<!-- Les avantages et inconvénients de la calisthenics -->
+<h2>Les avantages</h2>
+<div><p>
+✅ Pas besoin de salle
+✅ Peu de matériel (barre de traction suffit)
+✅ Force fonctionnelle (utile dans la vie quotidienne)
+✅ Moins de risque de blessure qu’avec charges lourdes
+✅ Développement esthétique naturel
+✅ Améliore posture et mobilité
+</div></p>
+
+<h2>Les inconvénients</h2>
+<div><p>
+❌ Progression parfois lente
+❌ Difficile pour les débutants en surpoids
+❌ Moins optimal pour prise de masse maximale comparé à la musculation lourde
+❌ Certains mouvements demandent beaucoup de patience
+</div></p>
+
+</body>
+</html>

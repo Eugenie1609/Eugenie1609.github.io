@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Site de Eugénie </title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<div id="entete-de-page"> 
+		<p> Accueil <br/> </p>
+	</div> 
+	
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th><a href="index.html"> Accueil </a></th>
+		<th><a href="productions.html">Productions scolaires</a></th>
+		<th><a href="passions.html">Mes Passions</a></th>
+		<th><a href="videos.html">Mes Vidéos</a></th>
+		<th><a href="monsitedereve/index.html" target=_blank>Mon site de rêve</a></th>
+	</tr>
+	</table> <br/> 
+	
+	<div class="presentation"> 
+		<img src="avatar.png" alt="ceci est mon avatar" class="arrondie"> 
+		<div class="texte-presentation"> 
+		<h2>Je me présente...</h2> 
+		<p>Je suis Eugénie, en seconde au sacré coeur à Toucroing. J'ai un grand frère et une grande soeur. Je suis créative, attentionnée et curieuse.</p> 
+		<p>J’ai plusieurs centres d’intérêt comme jouer de la guitare, faire du sport (jouer au foot ou faire du tennis de table), ou dessiner.</p> 
+		<p>J’aime apprendre de nouvelles choses, découvrir de nouvelles personnes et prendre soin des autres.</p> 
+	</div>  
+
+                </div> 
+<!--on ajoute le lien où se trouve la musique -->
+<audio  id="zic" src="music.mp3"></audio>
+<!--on nomme les boutons et leur statut -->
+<div>
+<a href="javascript:void(0)" onclick="changeState(0)" class="bouton">PLAY</a>
+<a href="javascript:void(0)" onclick="changeState(1)" class="bouton">PAUSE</a>
+<a href="javascript:void(0)" onclick="changeState(2)" class="bouton active">STOP</a>
+</div>
+<!--on écrit les variable du script -->
+<script>
+<!--on attribue valeur et fonction de chaque bouton -->
+function changeState(x){
+let boutons = document.querySelectorAll(".bouton");
+let audio = document.querySelector("#zic");
+for(let i =0; i<boutons.length; i++){
+boutons[i].classList.remove("active");
+}
+boutons[x].classList.add("active");
+if(x == 0){
+audio.play();
+}
+if(x == 1){
+audio.pause();
+}
+if(x == 2){
+audio.pause();
+audio.currentTime = 0;
+}
+}
+</script></div>
+			
+		<hr>
+		<div id="infos">
+			<h3> A lire aussi: </h3>
+			<ul>
+				<li> <a href="https://www.decathlon.fr/" target="_blank">Decathlon</a></li>
+				<li> <a href="https://open.spotify.com/intl-fr" target="_blank">Spotify</a></li>
+				<li> <a href="https://fr.pinterest.com/" target="_blank">Pinterest</a> </li>
+				<li> <a href="https://www.vinted.fr/" target="_blank">Vinted</a> </li>
+				<li> <a href="passions.html">Mes passions</a> </li>
+			</ul>
+		</div>
+	</div> <br/> 
+	<!--en dessous mon pied de page -->
+	<div id="pied-de-page">
+		<p> Projet SNT - Dernière mise à jour : 16/12/2025 <br/>
+		Les textes et images utilisés n'engagent que son auteur : Eugénie </p>
+	</div> <br/> 
+
+</body>
+
+</html>
